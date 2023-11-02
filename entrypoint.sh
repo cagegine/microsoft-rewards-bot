@@ -6,6 +6,9 @@ git pull > /dev/null
 # install any new dependencies
 pip install --root-user-action=ignore -r requirements.txt > /dev/null
 
+# be sure to have latest version of selenium
+pip install selenium --upgrade
+
 # remove temp file when previous execution crashed
 rm /tmp/.X99-lock
 
