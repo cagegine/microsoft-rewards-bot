@@ -6,7 +6,7 @@ RUN apt update && apt install -y google-chrome-stable xvfb
 
 WORKDIR /app
 
-RUN git clone https://github.com/nicoacu/Microsoft-Rewards-Farmer.git ./
+RUN git clone https://github.com/charlesbel/Microsoft-Rewards-Farmer.git ./
 
 RUN pip install --root-user-action=ignore  -r requirements.txt
 
