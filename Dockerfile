@@ -11,8 +11,8 @@ RUN git clone https://github.com/klept0/MS-Rewards-Farmer.git ./
 
 RUN pip install --root-user-action=ignore  -r requirements.txt
 
+COPY config.yaml ./
 COPY entrypoint.sh ./
-
 ENTRYPOINT ["/app/entrypoint.sh"]
 
 CMD ["python3", "main.py", "--visible"]
